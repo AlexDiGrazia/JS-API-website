@@ -109,14 +109,14 @@ for (const link of filterLink) {
 
 function createCard() {
   const cardData = [
-    {image: "./assets/images/portfolio-1", header: 'Web Development', title: 'Food Website'},
-    {image: "./assets/images/portfolio-2", header: 'Web Development', title: 'Skate Website'},
-    {image: "./assets/images/portfolio-3", header: 'Web Development', title: 'Eating Website'},
-    {image: "./assets/images/portfolio-4", header: 'UI Design', title: 'Cool Design'},
-    {image: "./assets/images/portfolio-5", header: 'App Development', title: 'Game App'},
-    {image: "./assets/images/portfolio-6", header: 'App Development', title: 'Gambling App'},
-    {image: "./assets/images/portfolio-7", header: 'App Development', title: 'Money App'},
-    {image: "./assets/images/portfolio-8", header: 'UI Design', type: 'Fantastic Design'}
+    {image: "./assets/images/portfolio-1.jpg", header: 'Web Development', title: 'Food Website'},
+    {image: "./assets/images/portfolio-2.jpg", header: 'Web Development', title: 'Skate Website'},
+    {image: "./assets/images/portfolio-3.jpg", header: 'Web Development', title: 'Eating Website'},
+    {image: "./assets/images/portfolio-4.jpg", header: 'UI Design', title: 'Cool Design'},
+    {image: "./assets/images/portfolio-5.jpg", header: 'App Development', title: 'Game App'},
+    {image: "./assets/images/portfolio-6.jpg", header: 'App Development', title: 'Gambling App'},
+    {image: "./assets/images/portfolio-7.jpg", header: 'App Development', title: 'Money App'},
+    {image: "./assets/images/portfolio-8.jpg", header: 'UI Design', type: 'Fantastic Design'}
   ];
 
   cardData.forEach((dataObject) => {
