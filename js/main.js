@@ -62,6 +62,50 @@ if (currentTheme) {
   }
 }
 
+function createCard() {
+  const cardData = [
+    {image: "./assets/images/portfolio-1.jpg", header: 'Web Development', title: 'Food Website', dataItem: "web"},
+    {image: "./assets/images/portfolio-2.jpg", header: 'Web Development', title: 'Skate Website', dataItem: "web"},
+    {image: "./assets/images/portfolio-3.jpg", header: 'Web Development', title: 'Eating Website', dataItem: "web"},
+    {image: "./assets/images/portfolio-4.jpg", header: 'UI Design', title: 'Cool Design', dataItem: "ui"},
+    {image: "./assets/images/portfolio-5.jpg", header: 'App Development', title: 'Game App', dataItem: "app"},
+    {image: "./assets/images/portfolio-6.jpg", header: 'App Development', title: 'Gambling App', dataItem: "app"},
+    {image: "./assets/images/portfolio-7.jpg", header: 'App Development', title: 'Money App', dataItem: "app"},
+    {image: "./assets/images/portfolio-8.jpg", header: 'UI Design', type: 'Fantastic Design', dataItem: "ui"}
+  ];
+
+  cardData.forEach((dataObject) => {
+
+    const card = document.createElement('div');
+    card.className = 'portfolio-card';
+    card.setAttribute("data-item", dataObject.dataItem);
+    portfolioGrid.appendChild(card);
+
+    const cardBody = document.createElement('div');
+    cardBody.className = 'card-body';
+    card.appendChild(cardBody);
+
+    const image = document.createElement('img');
+    image.setAttribute("src", dataObject.image);
+    image.setAttribute("alt", "portfolio code-icon")
+    cardBody.appendChild(image);
+
+    const anchor = document.createElement('a');
+    anchor.setAttribute("href", "#");
+    anchor.className = 'card-popup-box';
+    cardBody.appendChild(anchor);
+
+    const title = document.createElement('div');
+    title.innerHTML = dataObject.title;
+    anchor.appendChild(title);
+
+    const header = document.createElement('h3');
+    header.innerHTML = dataObject.header;
+    anchor.appendChild(header);
+  }
+)}
+createCard();
+
 toggleTheme.addEventListener('click', function() {
   const tab = this.parentElement.parentElement;
   if (!tab.className.includes(open)) {
@@ -107,49 +151,7 @@ for (const link of filterLink) {
   })
 }
 
-function createCard() {
-  const cardData = [
-    {image: "./assets/images/portfolio-1.jpg", header: 'Web Development', title: 'Food Website'},
-    {image: "./assets/images/portfolio-2.jpg", header: 'Web Development', title: 'Skate Website'},
-    {image: "./assets/images/portfolio-3.jpg", header: 'Web Development', title: 'Eating Website'},
-    {image: "./assets/images/portfolio-4.jpg", header: 'UI Design', title: 'Cool Design'},
-    {image: "./assets/images/portfolio-5.jpg", header: 'App Development', title: 'Game App'},
-    {image: "./assets/images/portfolio-6.jpg", header: 'App Development', title: 'Gambling App'},
-    {image: "./assets/images/portfolio-7.jpg", header: 'App Development', title: 'Money App'},
-    {image: "./assets/images/portfolio-8.jpg", header: 'UI Design', type: 'Fantastic Design'}
-  ];
 
-  cardData.forEach((dataObject) => {
-
-    const card = document.createElement('div');
-    card.className = 'portfolio-card';
-    card.setAttribute("data-item", "web");
-    portfolioGrid.appendChild(card);
-
-    const cardBody = document.createElement('div');
-    cardBody.className = 'card-body';
-    card.appendChild(cardBody);
-
-    const image = document.createElement('img');
-    image.setAttribute("src", dataObject.image);
-    image.setAttribute("alt", "portfolio code-icon")
-    cardBody.appendChild(image);
-
-    const anchor = document.createElement('a');
-    anchor.setAttribute("href", "#");
-    anchor.className = 'card-popup-box';
-    cardBody.appendChild(anchor);
-
-    const title = document.createElement('div');
-    title.innerHTML = dataObject.title;
-    anchor.appendChild(title);
-
-    const header = document.createElement('h3');
-    header.innerHTML = dataObject.header;
-    anchor.appendChild(header);
-  }
-)}
-createCard();
 
 // Full Site Modal "open buttons"
 for (const element of openModal) {
