@@ -4,14 +4,14 @@
 const Card = () => {
   
   const cardData = [
-    {image: "./assets/images/portfolio-1", header: 'Web Development', type: 'Food Website'},
-    {image: "./assets/images/portfolio-2", header: 'Web Development', type: 'Skate Website'},
-    {image: "./assets/images/portfolio-3", header: 'Web Development', type: 'Eating Website'},
-    {image: "./assets/images/portfolio-4", header: 'UI Design', type: 'Cool Design'},
-    {image: "./assets/images/portfolio-5", header: 'App Development', type: 'Game App'},
-    {image: "./assets/images/portfolio-6", header: 'App Development', type: 'Gambling App'},
-    {image: "./assets/images/portfolio-7", header: 'App Development', type: 'Money App'},
-    {image: "./assets/images/portfolio-8", header: 'UI Design', type: 'Fantastic Design'}
+    {image: "./assets/images/portfolio-1.jpg", header: 'Web Development', type: 'Food Website'},
+    {image: "./assets/images/portfolio-2.jpg", header: 'Web Development', type: 'Skate Website'},
+    {image: "./assets/images/portfolio-3.jpg", header: 'Web Development', type: 'Eating Website'},
+    {image: "./assets/images/portfolio-4.jpg", header: 'UI Design', type: 'Cool Design'},
+    {image: "./assets/images/portfolio-5.jpg", header: 'App Development', type: 'Game App'},
+    {image: "./assets/images/portfolio-6.jpg", header: 'App Development', type: 'Gambling App'},
+    {image: "./assets/images/portfolio-7.jpg", header: 'App Development', type: 'Money App'},
+    {image: "./assets/images/portfolio-8.jpg", header: 'UI Design', type: 'Fantastic Design'}
   ];
 
   
